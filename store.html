@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced E-Commerce Store</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Our Wholesale Store</h1>
+        <p id="banner"><marquee behavior="" direction="ltr"  scrollamount="12" >🌟 Huge Discounts on All Categories! 🌟</marquee></p>
+        <div id="cart">
+            <span>🛒 Cart (<span id="cart-count">0</span>)</span>
+        </div>
+    </header>
+
+    
+    <div class="filter">
+        <label for="price-filter">Filter by Max Price: </label>
+        <input type="number" id="price-filter" placeholder="Max Price">
+        <button id="apply-filter">Apply</button>
+        <button id="reset-filter">Reset</button>
+
+        <label for="category-filter">Category: </label>
+        <select id="category-filter">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+            <option value="beauty">Beauty</option>
+        </select>
+    </div>
+
+
+    <main id="product-list">
+        
+        <div class="product" data-id="1" data-name="Smartphone" data-price="18,999" data-category="electronics">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR30-s5p2XuDnWwedtZSpTyGVNG_2gnBPgda3S6cYJd8mjhKdq1EFimC7OEBWJLmBFShkoGrHmNAJZ8cKd7_e2TzM6uOHuuPqWSNBDCMobLyysg256QDEJnMQ&usqp=CAE" alt="Smartphone">
+            <h2>Smartphone</h2>
+            <p>Price: Rs 18,999</p>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="product" data-id="2" data-name="Laptop" data-price="63,499" data-category="electronics">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRJKtiPGh5uj1qGfKe-HzLxuyq3cOHmH41Yg4m7AzhJhEf0hZMDRkshozY3URPNt8p-AFHF0u7ShyYRGr-woohB5VP40XbrxP1xFQVo6sTHdsjz2JHgNL3e6w&usqp=CAE" alt="Laptop">
+            <h2>Laptop</h2>
+            <p>Price: Rs 63,499</p>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    
+        <div class="product" data-id="3" data-name="T-Shirt" data-price="1,299" data-category="clothing">
+            <img src="https://i0.wp.com/purble.in/wp-content/uploads/PST-1.jpg?fit=800%2C800&ssl=1" alt="T-Shirt">
+            <h2>T-Shirt</h2>
+            <p>Price: Rs 1,299</p>
+            <p>⭐️⭐️⭐️☆☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="4" data-name="Jeans" data-price="3,199" data-category="clothing">
+            <img src="download.jpg" alt="Jeans">
+            <h2>Jeans</h2>
+            <p>Price: Rs 3,199</p>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        
+        <div class="product" data-id="5" data-name="Novel" data-price="875" data-category="books">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXb7qL8VvNDxN33-RuyPVD6l3dCr0KLUK5dQ&s" alt="Novel">
+            <h2>Novel</h2>
+            <p>Price: Rs 875</p>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="6" data-name="Self-Help Book" data-price="270" data-category="books">
+            <img src="download2.jpg" alt="Self-Help Book">
+            <h2>Self-Help Book</h2>
+            <p>Price: Rs 270</p>
+            <p>⭐️⭐️⭐️☆☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        
+        <div class="product" data-id="7" data-name="Face Cream" data-price="499" data-category="beauty">
+            <img src="download 3.jpg" alt="Face Cream">
+            <h2>Face Cream</h2>
+            <p>Price: Rs 499</p>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="8" data-name="Lipstick" data-price="699" data-category="beauty">
+            <img src="4.jpg" alt="Lipstick">
+            <h2>Lipstick</h2>
+            <p>Price: Rs 699</p>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Store - Bringing Deals to You</p>
+        <pre>For more details :
+            Contact us:- mohkumar230@gmail.com
+                
+        </pre>
+    </footer>
+
+    
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <h3>Total: Rs<span id="total-price">0</span></h3>
+            <button id="checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="my.js"></script>
+    
+</body>
+</html>
